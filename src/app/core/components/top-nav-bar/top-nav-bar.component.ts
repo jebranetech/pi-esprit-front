@@ -24,6 +24,8 @@ export class TopNavBarComponent implements OnInit {
   }
 // In our todo component
 ngOnInit() {
+
+  
   this.todoService.loadAll();
   this.singleTodo$ = this.todoService.todos;
 
@@ -45,9 +47,9 @@ this.eventConfig = new EventConfig({
   showInviteList: true,
   isArchived: true,
   showDate: 61654,
-  event: 21
+  event: 22
 });
-  this.todoService.create(this.event);
+
   this.todoService.createEventConfig(this.eventConfig);
 }
 
